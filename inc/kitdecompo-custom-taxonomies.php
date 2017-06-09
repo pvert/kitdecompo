@@ -54,7 +54,7 @@ if ( ! function_exists('kitdecompo_wpth_custom_taxonomies') ) {
         */
         
         $labels_materiels = array(
-            'name' => 'Types de materiel',
+            'name' => 'Types de materiels',
             'singular_name' => 'Type de matériel',
             'all_items' => 'Toutes les types de matériel',
             'edit_item' => 'Éditer le type de matériel',
@@ -81,7 +81,7 @@ if ( ! function_exists('kitdecompo_wpth_custom_taxonomies') ) {
         */
         
         $labels_mesures = array(
-            'name' => 'Types de mesure',
+            'name' => 'Types de mesures',
             'singular_name' => 'Type de mesures',
             'all_items' => 'Toutes les types de mesure',
             'edit_item' => 'Éditer le type de mesure',
