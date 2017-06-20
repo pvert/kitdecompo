@@ -34,13 +34,19 @@ while ( have_posts() ) : the_post();
                                         <?php
                                         $echantillons = get_the_terms( $post->ID, 'echantillons');  
                                         kitdecompo_wpth_show_categories($echantillons, 'echantillons');
-                                        ?>                                
+                                        ?>     
+                                        <p><strong>Essence : </strong>
+                                        <?php the_field('essence');  ?>
+                                        </p>                           
                                     </td>
                                     <td>
                                         <?php
                                         $materiels = get_the_terms( $post->ID, 'materiels');  
                                         kitdecompo_wpth_show_categories($materiels, 'materiels');
                                         ?>   
+                                        <p>
+                                        <?php the_field('maille');  ?>
+                                        </p> 
                                     </td>
                                     <td>
                                         <?php
@@ -87,9 +93,7 @@ while ( have_posts() ) : the_post();
                         ?>
 
                     </p>
-                    <p><strong>Essence : </strong>
-                    <?php the_field('essence');  ?>
-                    </p>
+                    
                 </div>
                 <div class="wrapper-content">
                 <?php
